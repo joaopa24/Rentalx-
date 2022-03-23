@@ -44,6 +44,31 @@
                    }
                }
           }
+      },
+      "get":{
+          "tags": ["Category"],
+          "summary":"List all categories",
+          "description":"List all categories",
+          "response":{
+              "200":{
+                  "description":"Sucess",
+                  "content":{
+                     "appication/json":{
+                         "schema":{
+                             "type": "array",
+                             "properties":{
+                                 "name":{
+                                     "type":"string"
+                                 },
+                                 "description":{
+                                      "type":"string"
+                                 }
+                             }
+                         }
+                     }
+                  }
+              }
+          }
       }
   }
 }
